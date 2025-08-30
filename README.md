@@ -86,3 +86,9 @@ Then update your requirements.txt with:
 ```
 pip freeze > requirements.txt
 ```
+
+```
+deactivate
+```
+
+
