@@ -1,15 +1,5 @@
 # E-Commerce-Website-Using-Python
 
-## Get In Touch
-
-Have any problem? Don't hesitate to connect... <br>
-(i) Facebook: https://www.facebook.com/mohsingram <br>
-(ii) Youtube: https://www.youtube.com/mohsingram <br>
-
-## Web View
-
-Go to this link to view website <br>
-https://menshut.pythonanywhere.com
 
 ## Summary
 
@@ -55,7 +45,15 @@ Hello friends, This is my first full e-commerce project with Python-Flask. This 
 ## Conclusion
 
 There are also many more feature which are not in the list. Feel free to use this project
+# start project
 
+```set up your db config in app.py fom line21```
+```app.config['MYSQL_HOST'] = 'localhost'
+app.config['MYSQL_USER'] = 'root'
+app.config['MYSQL_PASSWORD'] = 'system'
+app.config['MYSQL_DB'] = 'menshut'
+app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
+```
 ```
 python -m venv venv
 ```
@@ -87,8 +85,15 @@ Then update your requirements.txt with:
 pip freeze > requirements.txt
 ```
 
+-for exit from env
 ```
 deactivate
 ```
 
+ > credentials
+username: admin@gmail.com   
+pass: admin@123
+(to customise admin pass change the hash by adding a new user to the db by your **desired password** and copy the hash of the pass from the db and update the admin password hash)
+
+#use mysql workbench or php myadmin
 
