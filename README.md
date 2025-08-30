@@ -93,7 +93,32 @@ deactivate
  > credentials
 username: admin@gmail.com   
 pass: admin@123
-(to customise admin pass change the hash by adding a new user to the db by your **desired password** and copy the hash of the pass from the db and update the admin password hash)
+to customise admin pass change the hash by runnig the file=> databse> adminpassgen.py [you can change the password inside the file] its goan generate a hash in the terminal copy and 
+ update the admin password hash in the database 
+>
+> ``` databse basic comands ```
+
+```
+select * from menshut.admin;
+
+
+-- truncate menshut.admin; -- (truncate) will remove all the data from the table by keeping the structure
+
+
+INSERT INTO `admin` (`id`, `firstName`, `lastName`, `email`, `mobile`, `address`, `password`, `type`, `confirmCode`) VALUES
+(1, 'admin', 'admin', 'admin@gmail.com', '123456789012', 'mngr', '$5$rounds=535000$kIwCD6PE4OccMADl$yYrUQQRjguSNoqjJk3846VlrT0vRJk1.3n1l4Tf7S.1', 'manager', '0');
+
+select * from menshut.users; 
+
+-- truncate menshut.users; 
+
+select * from menshut.product_level; 
+select * from menshut.product_view; 
+select * from menshut.products;
+
+update menshut.admin set firstName="Admin Bro" where id=1;
+
+```
 
 #use mysql workbench or php myadmin
 
