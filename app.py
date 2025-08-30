@@ -215,7 +215,7 @@ class RegisterForm(Form):
                        render_kw={'placeholder': 'Email'})
     password = PasswordField('', [validators.length(min=3)],
                              render_kw={'placeholder': 'Password'})
-    mobile = StringField('', [validators.length(min=11, max=15)], render_kw={'placeholder': 'Mobile'})
+    mobile = StringField('', [validators.length(min=11, max=15)], render_kw={'placeholder': 'Mobile with country code'})
 
 
 @app.route('/register', methods=['GET', 'POST'])
