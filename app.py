@@ -22,7 +22,7 @@ mysql = MySQL()
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PASSWORD'] = 'system'
-app.config['MYSQL_DB'] = 'menshut'
+app.config['MYSQL_DB'] = 'edgestore'
 app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
 
 # Initialize the app for use with this MySQL class
