@@ -1,5 +1,6 @@
 html {
   font-size: 1rem;
+  
 
 }
 
@@ -20,11 +21,27 @@ html {
     font-size: 1.6rem;
   }
 }
+body
+{
 
+  background: #e0e0e0;
+}
 section {
     padding: 20px 0;
 }
-
+.card a {
+  color: #000;
+}
+.card image{
+  box-shadow: 0 0 5px #393939;
+  transition: all 0.2s;
+  transform: scale(1.01);
+}
+.card:hover{
+  box-shadow: 0 0 5px #393939;
+  transition: all 0.2s;
+  transform: scale(1.01);
+}
 section .section-title {
     text-align: center;
     color: #007b5e;
@@ -33,6 +50,9 @@ section .section-title {
 }
 #footer {
     background: #393939 !important;
+    position: absolute;
+    /* bottom: -0; */
+    width: 100%;
 }
 #footer h5{
 	padding-left: 10px;
